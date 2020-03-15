@@ -1,0 +1,18 @@
+python -m egg.zoo.objects_game.train \
+    --perceptual_dimensions "[4, 4, 4, 4, 4]" \
+    --vocab_size 1100 \
+    --n_distractors 1 \
+    --n_epoch 50 \
+    --max_len 10  \
+    --sender_lr 0.001 \
+    --receiver_lr 0.001 \
+    --batch_size 32 \
+    --random_seed 111 \
+    --data_seed 222 \
+    --train_samples 1e5 \
+    --validation_samples 1e4\
+    --test_samples 1e3 \
+    --evaluate \
+    --dump_data_folder ./out_data \
+    --dump_msg_folder './out_messages' \
+    --shuffle_train_data
